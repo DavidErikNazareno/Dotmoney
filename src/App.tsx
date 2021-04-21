@@ -5,9 +5,5 @@ export function App() {
     </div>
   );
 }
-new function batata(){
-return (
-  <div>nos</div>
-)
-},
+
 export default App;
