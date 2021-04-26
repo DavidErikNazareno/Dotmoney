@@ -1,6 +1,7 @@
 import {createGlobalStyle} from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
+<<<<<<< HEAD
     :root {
         --background: #f0f2f5;
     } 
@@ -12,5 +13,16 @@ export const GlobalStyle = createGlobalStyle`
    }
    body {
        background: var(--background);
+=======
+    :root    
+
+* { 
+        margin: 0px,
+        padding: 0px,
+        box-sizing: border box,
+   }
+   body {
+       background: 
+>>>>>>> main
    }
 `
