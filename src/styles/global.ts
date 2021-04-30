@@ -1,28 +1,52 @@
 import {createGlobalStyle} from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
-<<<<<<< HEAD
     :root {
         --background: #f0f2f5;
-    } 
+        --red: #E52E4D;
+        --blue: #5429CC;
+        --blue-light: #6933FF;
+        --text-title: #363F5F;
+        --text-body: #969Cb3;
+        --shape: #FFFFFF;
+        } 
 
 * { 
         margin: 0px;
         padding: 0px;
         box-sizing: border box;
    }
-   body {
-       background: var(--background);
-=======
-    :root    
 
-* { 
-        margin: 0px,
-        padding: 0px,
-        box-sizing: border box,
+html {
+    @media (max-width: 1080px) {
+        font-size: 93.75%;
+    }
+    @media (max-width: 720px) {
+        font-size: 85.5%;
+    }
+}
+
+body {
+       background: var(--background);
+       -webkit-font-smoothing: antialiased;
    }
-   body {
-       background: 
->>>>>>> main
-   }
+
+body, input, textarea, button {
+    font-family:'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+    font-weight: 600;
+}
+
+button {
+    cursor: pointer;
+}
+
+[disabled] {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
 `
